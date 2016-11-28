@@ -91,7 +91,8 @@ require([], function (){
                 "pulse", "fadeIn","fadeInRight", "flipInX", "lightSpeedIn","rotateInUpLeft", "slideInUp","zoomIn",
                 ],
                 len = animationNames.length,
-                randomAnimationName = animationNames[Math.ceil(Math.random() * len) - 1];
+                num = (Math.ceil(Math.random() * 100)) % len;
+                randomAnimationName = animationNames[num];
 
                 // Fallback (CSS3 keyframe, requestAnimationFrame)
                 if (!window.requestAnimationFrame) {
@@ -141,12 +142,16 @@ require([], function (){
     }
 
     // Random Color 边栏顶部随机颜色
-    var colorList = ["#6da336", "#ff945c", "#66CC66", "#99CC99", "#CC6666", "#76becc", "#c99979", "#918597", "#4d4d4d"];
-    var id = Math.ceil(Math.random()*(colorList.length-1));
+    // var colorList = ["#00B0F0", "#00FFAA", "#8192D6", "#DCF7DA1", "#83FCD8", "#D9B3E6", "#E08031", "#199475", "#990099"];
+    // var id = Math.ceil(Math.random() * 100 ) % (colorList.length);
     // PC
-    $("#container .left-col .overlay").css({"background-color": colorList[id],"opacity": .3});
+    // $("#container .left-col .overlay").css({"background-color": colorList[id],"opacity": .3});
+    // // Mobile
+    // $("#container #mobile-nav .overlay").css({"background-color": colorList[id],"opacity": .5});
+    // PC
+    $("#container .left-col .overlay").css({"background-color": "#199BFF","opacity": .3});
     // Mobile
-    $("#container #mobile-nav .overlay").css({"background-color": colorList[id],"opacity": .7});
+    $("#container #mobile-nav .overlay").css({"background-color": "#199BFF","opacity": .5});
 
     // Table
     $("table").wrap("<div class='table-area'></div>");
@@ -159,14 +164,14 @@ require([], function (){
     })
 
     // Hide Labels
-    if(yiliaConfig.isArchive || yiliaConfig.isTag || yiliaConfig.isCategory) {
-        $(document).ready(function() {
-            $("#footer").after("<button class='hide-labels'>TAGS</button>");
-            $(".hide-labels").click(function() {
-                $(".article-info").toggle(200);
-            })
-        })
-    }
+    // if(yiliaConfig.isArchive || yiliaConfig.isTag || yiliaConfig.isCategory) {
+    //     $(document).ready(function() {
+    //         $("#footer").after("<button class='hide-labels'>TAGS</button>");
+    //         $(".hide-labels").click(function() {
+    //             $(".article-info").toggle(200);
+    //         })
+    //     })
+    // }
 
     // Task lists in markdown
     $('ul > li').each(function() {
