@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content="Yusxon" />
+
+
+
+<meta name="description" content="为何搭建个人博客一直想搭建自己的个人博客，写博客可以记录我的学习笔记、总结经验、分享技术等等。本来csdn、博客园都可以写博客，但作为一名程序猿，还是想拥有属于自己的个人博客~~但是因为我是一个Android程序猿，会点前端，不会开发后台，一直没有开工…最近一个朋友跑来说他想搭建自己的个人博客，然后后台由他开发，前台由我开发，一下子又激起了我搭建个人博客的兴趣…于是很快设计出了以下几个界面:
+&amp;n">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo+github博客搭建记录">
+<meta property="og:url" content="http://smileysx.github.io/2016/11/30/Hexo-github博客搭建记录/index.html">
+<meta property="og:site_name" content="Yusxon's Blog">
+<meta property="og:description" content="为何搭建个人博客一直想搭建自己的个人博客，写博客可以记录我的学习笔记、总结经验、分享技术等等。本来csdn、博客园都可以写博客，但作为一名程序猿，还是想拥有属于自己的个人博客~~但是因为我是一个Android程序猿，会点前端，不会开发后台，一直没有开工…最近一个朋友跑来说他想搭建自己的个人博客，然后后台由他开发，前台由我开发，一下子又激起了我搭建个人博客的兴趣…于是很快设计出了以下几个界面:
+&amp;n">
+<meta property="og:image" content="http://smileysx.github.io/myimg/Hexo-github博客搭建记录/home.png">
+<meta property="og:image" content="http://smileysx.github.io/myimg/Hexo-github博客搭建记录/articles.png">
+<meta property="og:image" content="http://smileysx.github.io/myimg/Hexo-github博客搭建记录/article-top.png">
+<meta property="og:image" content="http://smileysx.github.io/myimg/Hexo-github博客搭建记录/article-bottom.png">
+<meta property="og:image" content="http://smileysx.github.io/myimg/Hexo-github博客搭建记录/about.png">
+<meta property="og:image" content="http://smileysx.github.io/myimg/Hexo-github博客搭建记录/blog.png">
+<meta property="og:image" content="http://smileysx.github.io/myimg/Hexo-github博客搭建记录/new-repository.png">
+<meta property="og:image" content="http://smileysx.github.io/myimg/Hexo-github博客搭建记录/new-repository2.png">
+<meta property="og:updated_time" content="2016-11-30T14:02:44.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo+github博客搭建记录">
+<meta name="twitter:description" content="为何搭建个人博客一直想搭建自己的个人博客，写博客可以记录我的学习笔记、总结经验、分享技术等等。本来csdn、博客园都可以写博客，但作为一名程序猿，还是想拥有属于自己的个人博客~~但是因为我是一个Android程序猿，会点前端，不会开发后台，一直没有开工…最近一个朋友跑来说他想搭建自己的个人博客，然后后台由他开发，前台由我开发，一下子又激起了我搭建个人博客的兴趣…于是很快设计出了以下几个界面:
+&amp;n">
+<meta name="twitter:image" content="http://smileysx.github.io/myimg/Hexo-github博客搭建记录/home.png">
+
+<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="Yusxon&#39;s Blog" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/favicon.png">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>Hexo+github博客搭建记录 | Yusxon&#39;s Blog</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: undefined
+    }
+</script>
+
+
+    <script>
+        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
+    </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/avatar.png" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">Yusxon</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">认识，了解，探索，超越</p>
+        
+
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我&amp;留言板</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" href="/elimsxx@gmail.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" href="https://github.com/smileysx" title="GitHub"></a>
+                            
+                                <a class="fa 简书" href="http://www.jianshu.com/users/26190d90bd48/timeline" title="简书"></a>
+                            
+                                <a class="fa CSDN" href="http://blog.csdn.net/a249900679" title="CSDN"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/myelee主题/">myelee主题</a></li></ul>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">专注于前端</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">Yusxon</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/avatar.png" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">Yusxon</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">认识，了解，探索，超越</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我&amp;留言板</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" target="_blank" href="/elimsxx@gmail.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="https://github.com/smileysx" title="GitHub"></a>
+                            
+                                <a class="fa 简书" target="_blank" href="http://www.jianshu.com/users/26190d90bd48/timeline" title="简书"></a>
+                            
+                                <a class="fa CSDN" target="_blank" href="http://blog.csdn.net/a249900679" title="CSDN"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+</nav>
+      <div class="body-wrap"><article id="post-Hexo-github博客搭建记录" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/11/30/Hexo-github博客搭建记录/" class="article-date">
+      <time datetime="2016-11-30T01:22:45.000Z" itemprop="datePublished">2016-11-30</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Hexo+github博客搭建记录
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="为何搭建个人博客"><a href="#为何搭建个人博客" class="headerlink" title="为何搭建个人博客"></a>为何搭建个人博客</h2><p>一直想搭建自己的个人博客，写博客可以记录我的学习笔记、总结经验、分享技术等等。本来csdn、博客园都可以写博客，但作为一名程序猿，还是想拥有属于自己的个人博客~~<br>但是因为我是一个Android程序猿，会点前端，不会开发后台，一直没有开工…<br>最近一个朋友跑来说他想搭建自己的个人博客，然后后台由他开发，前台由我开发，一下子又激起了我搭建个人博客的兴趣…<br>于是很快设计出了以下几个界面:</p>
+<p><img src="/myimg/Hexo-github博客搭建记录/home.png" alt="home.png" width="18%">&nbsp;&nbsp;<img src="/myimg/Hexo-github博客搭建记录/articles.png" alt="articles.png" width="18%">&nbsp;&nbsp;<img src="/myimg/Hexo-github博客搭建记录/article-top.png" alt="article-top.png" width="18%">&nbsp;&nbsp;<img src="/myimg/Hexo-github博客搭建记录/article-bottom.png" alt="article-bottom.png" width="18%">&nbsp;&nbsp;<img src="/myimg/Hexo-github博客搭建记录/about.png" alt="about.png" width="18%"><br>但是由于各种原因，我了解到Hexo+github可以迅速搭建静态博客，并且有评论分享等功能，主题可以自定义。于是各种折腾，所以有了这个博客和这篇文章~~<a id="more"></a><br>OK,废话不多说，下面开始记录如何用Hexo+github搭建个人静态博客</p>
+<hr>
+<h2 id="Hexo-github搭建个人静态博客"><a href="#Hexo-github搭建个人静态博客" class="headerlink" title="Hexo+github搭建个人静态博客"></a>Hexo+github搭建个人静态博客</h2><h3 id="配置环境"><a href="#配置环境" class="headerlink" title="配置环境"></a>配置环境</h3><p><strong>首先说明下，因为我用的是Mac os系统，所以下面所说的都是基于Mac环境，不过出了安装有点区别，其他操作基本一样</strong><br>我所使用的版本：</p>
+<ul>
+<li>git: 2.10.0</li>
+<li>node.js: 7.2.0</li>
+<li>hexo: 3.2.2</li>
+</ul>
+<h4 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h4><ul>
+<li>先下载<a href="https://git-scm.com/downloads" target="_blank" rel="external">git</a> </li>
+<li>下载完打开文件，双击里面的.pkg文件进行安装(跟着它步骤安装，很简单)</li>
+<li>安装完后，打开iTerm(终端),输入<code>git —-version</code>,能查看到版本号就说明安装成功了</li>
+</ul>
+<h4 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h4><p>安装node.js可以去<a href="https://nodejs.org/en/" target="_blank" rel="external">官网</a>下载安装包安装，也可以用命令行安装，我这里选择用命令行安装(其实是不知道为什么，在官网下载的安装器一直安装出错…)</p>
+<ul>
+<li>首先确保你有Ruby环境,Mac下自带ruby</li>
+<li>打开iTerm(终端)，输入ruby -e “$(curl -fsSL <a href="https://raw.githubusercontent.com/Homebrew/install/master/install" target="_blank" rel="external">https://raw.githubusercontent.com/Homebrew/install/master/install</a>)” 安装Homebrew</li>
+<li>安装Homebrew后, 同样输入<code>brew -v</code>查看是否安装成功，然后输入<code>brew install node</code>安装node，安装完同样查看版本号<code>node -v</code></li>
+<li>测试，新建文件，输入以下内容:</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> http = <span class="built_in">require</span>(<span class="string">'http'</span>); </div><div class="line"></div><div class="line">http.createServer(<span class="function"><span class="keyword">function</span> (<span class="params">req, res</span>) </span>&#123;  </div><div class="line">  res.writeHead(<span class="number">200</span>, &#123;<span class="string">'Content-Type'</span>: <span class="string">'text/plain'</span>&#125;);  </div><div class="line">  res.end(<span class="string">'Hello Node.js\n'</span>);  </div><div class="line">&#125;).listen(<span class="number">8080</span>, <span class="string">"127.0.0.1"</span>); </div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(<span class="string">'Server running at http://127.0.0.1:8080/'</span>);</div></pre></td></tr></table></figure>
+<ul>
+<li>保存为test.js，然后在该文件目录下打开终端，输入<code>node test.js</code>看到”Server running at <a href="http://127.0.0.1:8080/&quot;之后在浏览器输入" target="_blank" rel="external">http://127.0.0.1:8080/&quot;之后在浏览器输入</a><code><a href="http://127.0.0.1:8080" target="_blank" rel="external">http://127.0.0.1:8080</a></code>能正常显示”Hello Node.js”则说明安装成功!</li>
+</ul>
+<h4 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h4><p>Hexo github地址:<a href="https://github.com/hexojs/hexo" target="_blank" rel="external">https://github.com/hexojs/hexo</a><br>Hexo 官网地址:<a href="https://hexo.io/" target="_blank" rel="external">https://hexo.io/</a><br>终于到了主题了，git跟node装好后，接下来就是安装Hexo，很简单，命令行输入<code>npm install -g hexo</code><br>安装完成后接下来就是初始化Hexo，新建文件夹blog,在该目录下打开终端，执行命令<code>hexo init</code>然后它会自动在blog文件夹下生成一些配置文件，这个blog文件夹就是博客的根目录。</p>
+<h4 id="测试Hexo"><a href="#测试Hexo" class="headerlink" title="测试Hexo"></a>测试Hexo</h4><p>在blog目录下打开终端<br>先执行<code>hexo generate</code>(下面会解释这些命令的作用)<br>然后执行<code>hexo server</code><br>然后在浏览器输入<code>localhost:4000</code>就能显示你的博客了<br><img src="/myimg/Hexo-github博客搭建记录/blog.png" alt="blog.png" width="50%"><br>可能会觉得这个界面很不好看，没关系，这只是Hexo带的默认主题，不满意可以自己修改、替换主题，甚至自己制作主题，后面会写我的主题的折腾记录。。。</p>
+<p>到此Hexo本地博客就搭建完成。</p>
+<h3 id="配置github"><a href="#配置github" class="headerlink" title="配置github"></a>配置github</h3><h4 id="建立repository"><a href="#建立repository" class="headerlink" title="建立repository"></a>建立repository</h4><p>注册github账号我就不说了,建立respository如图所示:<br><img src="/myimg/Hexo-github博客搭建记录/new-repository.png" alt="new-repository.png" width="20%">&nbsp;&nbsp;<img src="/myimg/Hexo-github博客搭建记录/new-repository2.png" alt="new-repository2.png" width="20%"><br>如上图所示，repository名称为<code>你的用户名.github.io</code>，项目为public<strong>一定要这样写</strong>然后点击<code>create repository</code>即可建立</p>
+<h4 id="把本地博客部署到github上"><a href="#把本地博客部署到github上" class="headerlink" title="把本地博客部署到github上"></a>把本地博客部署到github上</h4><p>在刚才搭建的blog文件夹中，有<code>_config.yml</code>这个文件,用编辑器打开,找到这一项：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">deploy:</div><div class="line">  type: git</div><div class="line">  repository: https://github.com/smileysx/smileysx.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+<ul>
+<li>其中type填写git，在老的版本可能是填写github，现在新版本是填写git</li>
+<li>repository填写刚刚建立的repository的地址</li>
+<li>branch则填写master，表示那项目的主分支<br>然后执行命令<code>npm install hexo-deployer-git –save</code><br>接着执行命令<code>hexo deploy</code>就可以把博客部署到github上了<br>然后在浏览器输入<code><a href="http://smileysx.github.io">http://smileysx.github.io</a></code>就可以看到你的博客了，其中smileysx是我的用户名，这个改为你的用户名就可以了。<h3 id="Hexo配置文件"><a href="#Hexo配置文件" class="headerlink" title="Hexo配置文件"></a>Hexo配置文件</h3>这里简单说下_config.yml配置文件<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">#博客标题(博客名)</div><div class="line">title: Yusxon&apos;s Blog</div><div class="line">#博客二级标题(个人简介)</div><div class="line">subtitle: 认识，了解，探索，超越</div><div class="line">#博客描述</div><div class="line">description:</div><div class="line">#作者</div><div class="line">author: Yusxon</div><div class="line">#语言</div><div class="line">language: zh-Hans</div><div class="line"></div><div class="line">...</div><div class="line"></div><div class="line"># Extensions</div><div class="line">## Plugins: https://hexo.io/plugins/</div><div class="line">## Themes: https://hexo.io/themes/</div><div class="line">#博客使用的主题</div><div class="line">theme: yelee</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>其他详细介绍可查看<a href="https://hexo.io/docs/" target="_blank" rel="external">官方文档</a><br>Hexo官网提供的<a href="https://hexo.io/themes/" target="_blank" rel="external">主题</a></p>
+<h3 id="Hexo常用命令"><a href="#Hexo常用命令" class="headerlink" title="Hexo常用命令"></a>Hexo常用命令</h3><h4 id="新建文章"><a href="#新建文章" class="headerlink" title="新建文章"></a>新建文章</h4><p><code>hexo new “文章名字”</code>,可以简写为<code>hexo n “文章名字”</code><br>新建的md文件在blog/source/_posts/文章名字.md</p>
+<h4 id="新建页面"><a href="#新建页面" class="headerlink" title="新建页面"></a>新建页面</h4><p><code>hexo new page “页面名字”</code><br>新建的文件夹在blog/source/页面名字</p>
+<h4 id="生成静态页面"><a href="#生成静态页面" class="headerlink" title="生成静态页面"></a>生成静态页面</h4><p><code>hexo generate</code>,可以简写为<code>hexo g</code><br>编译后，会出现一个public文件夹，里面将所有的md文件编译成html文件及一些css，js，图片等文件</p>
+<h4 id="开启本地服务"><a href="#开启本地服务" class="headerlink" title="开启本地服务"></a>开启本地服务</h4><p><code>hexo server</code>,可以简写为<code>hexo s</code><br>开启本地服务，即可以在本地浏览器浏览博客，默认端口为4000，按<code>ctrl+c</code>可关闭服务</p>
+<h4 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h4><p><code>hexo deploy</code>,可以简写为<code>hexo d</code><br>将本地博客部署到关联的github上</p>
+<h4 id="清除public文件夹"><a href="#清除public文件夹" class="headerlink" title="清除public文件夹"></a>清除public文件夹</h4><p><code>hexo clean</code><br>当source文件夹中的部分资源更改过之后，特别是对文件进行了删除或者路径的改变之后，需要执行这个命令，然后重新编译。也可以删除blog目录下的db.json文件再重新编译。</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2016/11/30/Hexo-github博客搭建记录/">Hexo+github博客搭建记录</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">Yusxon</a></p>
+        <p><span>发布时间:</span>2016-11-30, 09:22:45</p>
+        <p><span>最后更新:</span>2016-11-30, 22:02:44</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2016/11/30/Hexo-github博客搭建记录/" title="Hexo+github博客搭建记录">http://smileysx.github.io/2016/11/30/Hexo-github博客搭建记录/</a>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+    <div style="width: auto;height: 1.2em;">
+        
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2016/11/30/Hexo主题-myelee折腾记录/">
+                    Hexo主题-myelee折腾记录
+                </a>
+            </div>
+        
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#为何搭建个人博客"><span class="toc-number">1.</span> <span class="toc-text">为何搭建个人博客</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Hexo-github搭建个人静态博客"><span class="toc-number">2.</span> <span class="toc-text">Hexo+github搭建个人静态博客</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#配置环境"><span class="toc-number">2.1.</span> <span class="toc-text">配置环境</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#安装git"><span class="toc-number">2.1.1.</span> <span class="toc-text">安装git</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装node-js"><span class="toc-number">2.1.2.</span> <span class="toc-text">安装node.js</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#安装Hexo"><span class="toc-number">2.1.3.</span> <span class="toc-text">安装Hexo</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#测试Hexo"><span class="toc-number">2.1.4.</span> <span class="toc-text">测试Hexo</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#配置github"><span class="toc-number">2.2.</span> <span class="toc-text">配置github</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#建立repository"><span class="toc-number">2.2.1.</span> <span class="toc-text">建立repository</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#把本地博客部署到github上"><span class="toc-number">2.2.2.</span> <span class="toc-text">把本地博客部署到github上</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hexo配置文件"><span class="toc-number">2.3.</span> <span class="toc-text">Hexo配置文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hexo常用命令"><span class="toc-number">2.4.</span> <span class="toc-text">Hexo常用命令</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#新建文章"><span class="toc-number">2.4.1.</span> <span class="toc-text">新建文章</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#新建页面"><span class="toc-number">2.4.2.</span> <span class="toc-text">新建页面</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#生成静态页面"><span class="toc-number">2.4.3.</span> <span class="toc-text">生成静态页面</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#开启本地服务"><span class="toc-number">2.4.4.</span> <span class="toc-text">开启本地服务</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#部署"><span class="toc-number">2.4.5.</span> <span class="toc-text">部署</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#清除public文件夹"><span class="toc-number">2.4.6.</span> <span class="toc-text">清除public文件夹</span></a></li></ol></li></ol></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-4 i,
+        .toc-level-4 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"true"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"Hexo+github博客搭建记录　| Yusxon's Blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+    
+      <div class="duoshuo" id="comments">
+    <div id="comment-box" ></div>
+    <div class="ds-thread" id="ds-thread" data-thread-key="2016/11/30/Hexo-github博客搭建记录/" data-title="Hexo+github博客搭建记录" data-url="http://smileysx.github.io/2016/11/30/Hexo-github博客搭建记录/"></div>
+    <script>
+        var duoshuoQuery = {short_name:"yusxon"};
+        var loadComment = function(){
+            var d = document, s = d.createElement('script');
+            // s.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//sttic.duaoshuo.com/embed.js';
+            s.src = '/js/embed.js';
+            s.async = true; s.charset = 'UTF-8';
+            (d.head || d.body).appendChild(s);
+        }
+
+        
+    </script>
+    
+    <script> loadComment(); </script>
+
+</div>
+    
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2016 Yusxon
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE & Yusxon <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                    本站访问量:
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                    本页访问量:
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // var iPad = window.navigator.userAgent.indexOf('iPad');
+            // if (iPad > -1 || $(".left-col").css("display") === "none") {
+            //     var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+            //     var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+            //     $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            // }
+            // else {
+            //     var backgroundnum = 10;
+            //     var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+            //     $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            // }
+
+            var backgroundnum = 10;
+            var num = Math.ceil((Math.random() * 100)) % backgroundnum + 1;
+            var backgroundimg = "url(/background/sea/bg-x.jpg)".replace(/x/gi, num);
+            $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+        })
+    </script>
+
+
+
+
+
+    <script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+             post: ".article-entry a[href], .copyright a[href]", 
+            
+            
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>

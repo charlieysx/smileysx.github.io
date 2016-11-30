@@ -17,9 +17,9 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="标签云">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+<meta property="og:url" content="http://smileysx.github.io/tags/index.html">
 <meta property="og:site_name" content="Yusxon's Blog">
-<meta property="og:updated_time" content="2016-11-28T06:49:16.000Z">
+<meta property="og:updated_time" content="2016-11-29T10:01:50.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="标签云">
 
@@ -74,7 +74,9 @@
 </script>
 
 
-    <script> yiliaConfig.jquery_ui = [false]; </script>
+    <script>
+        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
+    </script>
 
 
 
@@ -160,7 +162,7 @@
                         
                             <li><a href="/tags/">标签云</a></li>
                         
-                            <li><a href="/about/">关于我</a></li>
+                            <li><a href="/about/">关于我&amp;留言板</a></li>
                         
                         </ul>
                     </nav>
@@ -171,11 +173,9 @@
                             
                                 <a class="fa GitHub" href="https://github.com/smileysx" title="GitHub"></a>
                             
+                                <a class="fa 简书" href="http://www.jianshu.com/users/26190d90bd48/timeline" title="简书"></a>
+                            
                                 <a class="fa CSDN" href="http://blog.csdn.net/a249900679" title="CSDN"></a>
-                            
-                                <a class="fa QQ" href="/249900679" title="QQ"></a>
-                            
-                                <a class="fa 微信" href="/18814128167" title="微信"></a>
                             
                         </ul>
                     </nav>
@@ -184,7 +184,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/myelee主题/">myelee主题</a></li></ul>
                     </div>
                 </section>
                 
@@ -241,7 +241,7 @@
                 
                     <li><a href="/tags/">标签云</a></li>
                 
-                    <li><a href="/about/">关于我</a></li>
+                    <li><a href="/about/">关于我&amp;留言板</a></li>
                 
                 <div class="clearfix"></div>
                 </ul>
@@ -253,11 +253,9 @@
                             
                                 <a class="fa GitHub" target="_blank" href="https://github.com/smileysx" title="GitHub"></a>
                             
+                                <a class="fa 简书" target="_blank" href="http://www.jianshu.com/users/26190d90bd48/timeline" title="简书"></a>
+                            
                                 <a class="fa CSDN" target="_blank" href="http://blog.csdn.net/a249900679" title="CSDN"></a>
-                            
-                                <a class="fa QQ" target="_blank" href="/249900679" title="QQ"></a>
-                            
-                                <a class="fa 微信" target="_blank" href="/18814128167" title="微信"></a>
                             
                         </ul>
             </nav>
@@ -327,10 +325,10 @@
 <p class="count"></p>
 
 <div class="tags">
-    <a href="/tags/随笔/" style="font-size: 16px; color: #808080">随笔</a>
+    <a href="/tags/Hexo/" style="font-size: 21px; color: blue">Hexo</a> <a href="/tags/myelee主题/" style="font-size: 16px; color: red">myelee主题</a>
 </div>
 <style>
-    .category-list li{
+    /*.category-list li{
         display: inline-block;
         margin: 0 1em .5em 0;
         padding: 4px;
@@ -345,7 +343,7 @@
     .category-list-count {
         margin-left: 2px;
         font-size: .9rem;
-    }
+    }*/
     .article-entry ul li:before{ display: none; }
     .article-inner { text-align: center; }
     .tags {
@@ -356,13 +354,13 @@
     .tags a {
         margin-right: 1em;
         line-height: 65px;
-        border-bottom: 1px solid gray;
+        padding: 3px;
         white-space: nowrap;
-        transition: border-bottom .5s;
     }
     .tags a:hover {
-        border-bottom: 3px dotted gray;
+        border: 1px solid gray;
         text-decoration: none;
+
     }
     #count > span {
         margin: auto .2em;
@@ -375,7 +373,7 @@
         <!-- 已有<span><script>document.write($(".category-list-item").length)</script></span>个分类， -->
         共计<span><script>document.write($(".tags > a").length)</script></span>个标签
 </p>
-<script>
+<script type="text/javascript">
     $('#count').appendTo('.count');
 </script>
 
@@ -394,54 +392,7 @@
 
 
 
-    
-<div class="share">
-    
-        <div class="bdsharebuttonbox">
-            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
-            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
-            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
-            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
-            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
-            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
-        </div>
-        <script>
-            window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"标签云　| Yusxon's Blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-        </script>
-    
 
-    
-</div>
-
-
-
-
-
-
-
-    
-      <div class="duoshuo" id="comments">
-    <div id="comment-box" ></div>
-    <div class="ds-thread" id="ds-thread" data-thread-key="tags/index.html" data-title="标签云" data-url="http://yoursite.com/tags/index.html"></div>
-    <script>
-        var duoshuoQuery = {short_name:"yusxon"};
-        var loadComment = function(){
-            var d = document, s = d.createElement('script');
-            // s.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//sttic.duaoshuo.com/embed.js';
-            s.src = '/js/embed.js';
-            s.async = true; s.charset = 'UTF-8';
-            (d.head || d.body).appendChild(s);
-        }
-
-        
-    </script>
-    
-    <script> loadComment(); </script>
-
-</div>
-    
 
 
 
@@ -464,6 +415,7 @@
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
+                    本站访问量:
                         <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
@@ -473,6 +425,7 @@
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
+                    本页访问量:
                         <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>

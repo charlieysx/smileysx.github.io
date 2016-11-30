@@ -20,7 +20,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Yusxon's Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://smileysx.github.io/index.html">
 <meta property="og:site_name" content="Yusxon's Blog">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Yusxon's Blog">
@@ -78,7 +78,9 @@
 </script>
 
 
-    <script> yiliaConfig.jquery_ui = [false]; </script>
+    <script>
+        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
+    </script>
 
 
 
@@ -164,7 +166,7 @@
                         
                             <li><a href="/tags/">标签云</a></li>
                         
-                            <li><a href="/about/">关于我</a></li>
+                            <li><a href="/about/">关于我&amp;留言板</a></li>
                         
                         </ul>
                     </nav>
@@ -175,11 +177,9 @@
                             
                                 <a class="fa GitHub" href="https://github.com/smileysx" title="GitHub"></a>
                             
+                                <a class="fa 简书" href="http://www.jianshu.com/users/26190d90bd48/timeline" title="简书"></a>
+                            
                                 <a class="fa CSDN" href="http://blog.csdn.net/a249900679" title="CSDN"></a>
-                            
-                                <a class="fa QQ" href="/249900679" title="QQ"></a>
-                            
-                                <a class="fa 微信" href="/18814128167" title="微信"></a>
                             
                         </ul>
                     </nav>
@@ -188,7 +188,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/myelee主题/">myelee主题</a></li></ul>
                     </div>
                 </section>
                 
@@ -245,7 +245,7 @@
                 
                     <li><a href="/tags/">标签云</a></li>
                 
-                    <li><a href="/about/">关于我</a></li>
+                    <li><a href="/about/">关于我&amp;留言板</a></li>
                 
                 <div class="clearfix"></div>
                 </ul>
@@ -257,11 +257,9 @@
                             
                                 <a class="fa GitHub" target="_blank" href="https://github.com/smileysx" title="GitHub"></a>
                             
+                                <a class="fa 简书" target="_blank" href="http://www.jianshu.com/users/26190d90bd48/timeline" title="简书"></a>
+                            
                                 <a class="fa CSDN" target="_blank" href="http://blog.csdn.net/a249900679" title="CSDN"></a>
-                            
-                                <a class="fa QQ" target="_blank" href="/249900679" title="QQ"></a>
-                            
-                                <a class="fa 微信" target="_blank" href="/18814128167" title="微信"></a>
                             
                         </ul>
             </nav>
@@ -271,19 +269,19 @@
 </nav>
       <div class="body-wrap">
   
-    <article id="post-测试" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Hexo-github博客搭建记录" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/11/28/测试/" class="article-date">
-      <time datetime="2016-11-28T07:13:36.000Z" itemprop="datePublished">2016-11-28</time>
+      <a href="/2016/11/30/Hexo-github博客搭建记录/" class="article-date">
+      <time datetime="2016-11-30T01:22:45.000Z" itemprop="datePublished">2016-11-30</time>
 </a>
 
  
-    <a href="/2016/11/28/测试/#comments" title="查看评论">
+    <a href="/2016/11/30/Hexo-github博客搭建记录/#comments" title="查看评论">
         <i class="fa fa-comments-o" aria-hidden="true"></i>
         <span class="count-comment"></span>
         
-            <span class="ds-thread-count"  data-thread-key="2016/11/28/测试/" ></span>
+            <span class="ds-thread-count"  data-thread-key="2016/11/30/Hexo-github博客搭建记录/" ></span>
         
         
     </a>
@@ -299,7 +297,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/28/测试/">测试</a>
+      <a class="article-title" href="/2016/11/30/Hexo-github博客搭建记录/">Hexo+github博客搭建记录</a>
     </h1>
   
 
@@ -309,24 +307,104 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <h3 id="使用RenderScript前的配置"><a href="#使用RenderScript前的配置" class="headerlink" title="使用RenderScript前的配置"></a>使用RenderScript前的配置</h3><h2 id="1-android-studio中的配置"><a href="#1-android-studio中的配置" class="headerlink" title="1.android studio中的配置:"></a>1.android studio中的配置:</h2><p>在build.gradle中添加：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">android &#123;</div><div class="line">    defaultConfig &#123;</div><div class="line">        ...</div><div class="line">    	renderscriptTargetApi <span class="number">18</span></div><div class="line">        renderscriptSupportModeEnabled <span class="literal">true</span></div><div class="line">		...</div><div class="line">	&#125;   </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+              <h2 id="为何搭建个人博客"><a href="#为何搭建个人博客" class="headerlink" title="为何搭建个人博客"></a>为何搭建个人博客</h2><p>一直想搭建自己的个人博客，写博客可以记录我的学习笔记、总结经验、分享技术等等。本来csdn、博客园都可以写博客，但作为一名程序猿，还是想拥有属于自己的个人博客~~<br>但是因为我是一个Android程序猿，会点前端，不会开发后台，一直没有开工…<br>最近一个朋友跑来说他想搭建自己的个人博客，然后后台由他开发，前台由我开发，一下子又激起了我搭建个人博客的兴趣…<br>于是很快设计出了以下几个界面:</p>
+<p><img src="/myimg/Hexo-github博客搭建记录/home.png" alt="home.png" width="18%" />&nbsp;&nbsp;<img src="/myimg/Hexo-github博客搭建记录/articles.png" alt="articles.png" width="18%" />&nbsp;&nbsp;<img src="/myimg/Hexo-github博客搭建记录/article-top.png" alt="article-top.png" width="18%" />&nbsp;&nbsp;<img src="/myimg/Hexo-github博客搭建记录/article-bottom.png" alt="article-bottom.png" width="18%" />&nbsp;&nbsp;<img src="/myimg/Hexo-github博客搭建记录/about.png" alt="about.png" width="18%" /><br>但是由于各种原因，我了解到Hexo+github可以迅速搭建静态博客，并且有评论分享等功能，主题可以自定义。于是各种折腾，所以有了这个博客和这篇文章~~
           
       
     </div>
     
     <div class="article-info article-info-index">
       
+        <div class="article-pop-out tagcloud">
+          <a class="">置顶</a>
+        </div>
+      
       
 
       
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/随笔/">随笔</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
     </div>
 
       
         <p class="article-more-link">
-          <a href="/2016/11/28/测试/#more">阅读全文 >></a>
+          <a href="/2016/11/30/Hexo-github博客搭建记录/#more">阅读全文 >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
+    <article id="post-Hexo主题-myelee折腾记录" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/11/30/Hexo主题-myelee折腾记录/" class="article-date">
+      <time datetime="2016-11-30T01:23:47.000Z" itemprop="datePublished">2016-11-30</time>
+</a>
+
+ 
+    <a href="/2016/11/30/Hexo主题-myelee折腾记录/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="2016/11/30/Hexo主题-myelee折腾记录/" ></span>
+        
+        
+    </a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/30/Hexo主题-myelee折腾记录/">Hexo主题-myelee折腾记录</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <h2 id="myelee主题来源"><a href="#myelee主题来源" class="headerlink" title="myelee主题来源"></a>myelee主题来源</h2><p>说明：myelee主题是基于<a href="https://github.com/MOxFIVE">MOxFIVE</a>提供的<a href="https://github.com/MOxFIVE/hexo-theme-yelee">hexo-theme-yelee</a>主题修改的主题.<br>在此感谢<a href="https://github.com/MOxFIVE">MOxFIVE</a>与<a href="http://www.netcan666.com/">Netcan</a>提供的主题和主题修改思路!</p>
+<p>该主题我已上传到github,项目为<a href="https://github.com/smileysx/hexo-theme-myelee">hexo-theme-myelee</a>.</p>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+        <div class="article-pop-out tagcloud">
+          <a class="">置顶</a>
+        </div>
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/myelee主题/">myelee主题</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2016/11/30/Hexo主题-myelee折腾记录/#more">阅读全文 >></a>
         </p>
       
       <div class="clearfix"></div>
@@ -360,6 +438,7 @@
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
+                    本站访问量:
                         <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
@@ -369,6 +448,7 @@
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
+                    本页访问量:
                         <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
@@ -409,7 +489,8 @@
                 var duoshuoQuery = {short_name:"yusxon"};
                 (function() {
                     var d = document, s = d.createElement('script');
-                    s.src = 'http://static.duoshuo.com/embed.js';
+                    // s.src = 'http://static.duoshuo.com/embed.js';
+                    s.src = '/js/embed.js';
                     s.async = true; s.charset = 'UTF-8';
                     (d.head || d.body).appendChild(s);
                 })();

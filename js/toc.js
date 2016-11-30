@@ -39,26 +39,23 @@ define(function (){
         })
     }()
 
+    var $iconToFold = $(".toc-item > .fa-caret-down");
+    var $iconToExpand = $(".toc-item > .fa-caret-right");
+    $iconToExpand.toggleClass("hide");
+
     var clickTitle = function(){
-        $titleHasChild.dblclick(function(){
+        $titleHasChild.click(function(){
             $(this).siblings(".toc-child").hide(100);
             $(this).siblings("i").toggleClass("hide");
-        })
-        // After dblclick enent
-        $titleHasChild.click(function(){
             var $curentTocChild = $(this).siblings(".toc-child");
             if ($curentTocChild.is(":hidden")) {
                 $curentTocChild.show(100);
-                $(this).siblings("i").toggleClass("hide");
             }
         })
     }()
 
     var clickTocTitle = function(){
-        var $iconToExpand = $(".toc-item > .fa-caret-right");
-        var $iconToFold = $(".toc-item > .fa-caret-down");
         var $subToc = $titleHasChild.next(".toc-child");
-        $iconToExpand.addClass("hide");
 
         var $tocTitle = $("#toc .toc-title");
         if ($titleHasChild.length) {
@@ -66,12 +63,12 @@ define(function (){
             $tocTitle.click(function(){
                 if ($subToc.is(":hidden")) {
                     $subToc.show(150);
-                    $iconToExpand.removeClass("hide");
-                    $iconToFold.addClass("hide");
-                } else {
-                    $subToc.hide(100);
                     $iconToExpand.addClass("hide");
                     $iconToFold.removeClass("hide");
+                } else {
+                    $subToc.hide(100);
+                    $iconToExpand.removeClass("hide");
+                    $iconToFold.addClass("hide");
                 }
             })
             // TOC on mobile

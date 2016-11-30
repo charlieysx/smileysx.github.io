@@ -507,6 +507,9 @@ a {
   #container .toc-article a {
     color: #767676;
   }
+  #container li.toc-item {
+    line-height: 1.2;
+  }
   #container .copyright {
     width: 90%;
     padding: 0.5em 0.8em;
@@ -654,7 +657,7 @@ a {
 #header .header-subtitle {
   text-align: center;
   color: #999;
-  font-size: 0.875rem;
+  font-size: 1em;
   line-height: 1.75;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -682,7 +685,8 @@ a {
   cursor: default;
 }
 #header .header-menu li a {
-  font-size: 0.875rem;
+  font-size: 1em;
+  font-weight: bold;
   min-width: 300px;
 }
 #header .switch-area {
@@ -1079,6 +1083,19 @@ color
 }
 .post-list li:hover a {
   color: #88acdb;
+}
+.ui-tooltip {
+  padding: 6px;
+  max-width: 30em;
+  -webkit-box-shadow: 0 0 0.8em rgba(0,0,0,0.6);
+  box-shadow: 0 0 0.8em rgba(0,0,0,0.6);
+  color: #fff;
+  font-family: "Lucida Grande", Verdana, "Helvetica Neue", Arial, "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+  font-size: 0.9em;
+  background: rgba(0,0,0,0.65);
+}
+body .ui-tooltip {
+  border: 1px solid #fff;
 }
 .pace .pace-progress {
   background: #77b6ff;
@@ -1521,20 +1538,27 @@ color
 }
 .article-entry h3 {
   margin: 0.5em auto;
-  color: #438aac;
-  background: rgba(243,248,253,0.6);
-  border: 1px solid #d2e8fa;
+  color: #51a7ea;
+  background: rgba(205,223,243,0.6);
+  border: 1px solid #b3d5f1;
   padding: 0.2em 0.6em;
-  -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+/*box-shadow: 1px 1px 1px rgba(0,0,0, .15)*/
+/*&::after
+            content " >"*/
 }
 .article-entry h3:hover a {
   text-decoration: underline;
 }
-.article-entry h3::after {
-  content: " >";
+.article-entry h4 {
+  color: #2fbcd8;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
 }
-.article-entry h4,
+.article-entry h4::before {
+  content: " —— ";
+  font-family: Arial;
+}
 .article-entry h5,
 .article-entry h6 {
   margin-top: 20px;
@@ -1621,7 +1645,7 @@ color
   display: table;
   width: 100%;
   height: 2.5em;
-  margin: 1em auto;
+/*margin: 1em auto;*/
   font-size: 1rem;
   background: rgba(158,188,226,0.75);
 }
@@ -1687,7 +1711,7 @@ li:hover {
   position: fixed;
   left: 220px;
   top: 385px;
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: bold;
   font-family: inherit;
   color: #d3d3d3;
@@ -1713,7 +1737,7 @@ li:hover {
 /*background-color: rgba(0, 0, 0, 0.6)*/
 }
 #toc {
-  font-size: 0.9rem;
+  font-size: 1em;
   line-height: 1.65em;
 }
 #toc .toc-title {
@@ -1768,6 +1792,20 @@ li:hover {
 #toc ol.toc ol.toc-child {
   padding-left: 1.25em;
   margin: 4px 0;
+}
+#toc a.toc-link {
+  display: inline-block;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+#toc li.toc-item {
+  line-height: 1.45em;
+}
+#toc li.toc-item > i {
+  position: relative;
+  bottom: 0.35em;
 }
 .copyright {
   width: 85%;
