@@ -1,555 +1,145 @@
-<!DOCTYPE html>
-<html lang="zh-Hans">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
-    <!--[if lt IE 9]>
-        <style>body {display: none; background: none !important} </style>
-        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
-    <![endif]-->
-
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="format-detection" content="telephone=no" />
-<meta name="author" content="Yusxon" />
-
-
-
-<meta name="description" content="myelee主题来源说明：myelee主题是基于MOxFIVE提供的hexo-theme-yelee主题修改的主题.在此感谢MOxFIVE与Netcan提供的主题和主题修改思路!
-该主题我已上传到github,项目为hexo-theme-myelee.">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hexo主题-myelee折腾记录">
-<meta property="og:url" content="http://yusxon.cn/2016/11/30/Hexo主题-myelee折腾记录/index.html">
-<meta property="og:site_name" content="Yusxon's Blog">
-<meta property="og:description" content="myelee主题来源说明：myelee主题是基于MOxFIVE提供的hexo-theme-yelee主题修改的主题.在此感谢MOxFIVE与Netcan提供的主题和主题修改思路!
-该主题我已上传到github,项目为hexo-theme-myelee.">
-<meta property="og:updated_time" content="2016-11-30T10:50:37.000Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo主题-myelee折腾记录">
-<meta name="twitter:description" content="myelee主题来源说明：myelee主题是基于MOxFIVE提供的hexo-theme-yelee主题修改的主题.在此感谢MOxFIVE与Netcan提供的主题和主题修改思路!
-该主题我已上传到github,项目为hexo-theme-myelee.">
-
-<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
-
-
-    <link rel="alternate" href="/atom.xml" title="Yusxon&#39;s Blog" type="application/atom+xml">
-
-
-
-    <link rel="shortcut icon" href="/favicon.png">
-
-
-
-    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
-
-
-
-    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
-
-
-
-    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
-    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
-
-
-<link rel="stylesheet" href="/css/style.css">
-
-
-
-<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-
-
-<title>Hexo主题-myelee折腾记录 | Yusxon&#39;s Blog</title>
-
-<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
-<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
-
-<script>
-    var yiliaConfig = {
-        fancybox: true,
-        animate: true,
-        isHome: false,
-        isPost: true,
-        isArchive: false,
-        isTag: false,
-        isCategory: false,
-        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
-        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-        search: undefined
-    }
-</script>
-
-
-    <script>
-        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
-    </script>
-
-
-
-    <script> yiliaConfig.rootUrl = "\/";</script>
-
-
-
-
-
-
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>代金券分享</title>
 </head>
-<body>
-  <div id="container">
-    <div class="left-col">
-    <div class="overlay"></div>
-<div class="intrude-less">
-    <header id="header" class="inner">
-        <a href="/" class="profilepic">
-            <img src="/img/avatar.png" class="animated zoomIn">
-        </a>
-        <hgroup>
-          <h1 class="header-author"><a href="/">Yusxon</a></h1>
-        </hgroup>
-
-        
-        <p class="header-subtitle">认识，了解，探索，超越</p>
-        
-
-        
-
-
-        
-            <div id="switch-btn" class="switch-btn">
-                <div class="icon">
-                    <div class="icon-ctn">
-                        <div class="icon-wrap icon-house" data-idx="0">
-                            <div class="birdhouse"></div>
-                            <div class="birdhouse_holes"></div>
-                        </div>
-                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
-                            <div class="ribbon"></div>
-                        </div>
-                        
-                        <div class="icon-wrap icon-link hide" data-idx="2">
-                            <div class="loopback_l"></div>
-                            <div class="loopback_r"></div>
-                        </div>
-                        
-                        
-                        <div class="icon-wrap icon-me hide" data-idx="3">
-                            <div class="user"></div>
-                            <div class="shoulder"></div>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-                <div class="tips-box hide">
-                    <div class="tips-arrow"></div>
-                    <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
-                        
-                        <li>友情链接</li>
-                        
-                        
-                        <li>关于我</li>
-                        
-                    </ul>
-                </div>
-            </div>
-        
-
-        <div id="switch-area" class="switch-area">
-            <div class="switch-wrap">
-                <section class="switch-part switch-part1">
-                    <nav class="header-menu">
-                        <ul>
-                        
-                            <li><a href="/">主页</a></li>
-                        
-                            <li><a href="/archives/">所有文章</a></li>
-                        
-                            <li><a href="/tags/">标签云</a></li>
-                        
-                            <li><a href="/about/">关于我&amp;留言板</a></li>
-                        
-                        </ul>
-                    </nav>
-                    <nav class="header-nav">
-                        <ul class="social">
-                            
-                                <a class="fa Email" href="/elimsxx@gmail.com" title="Email"></a>
-                            
-                                <a class="fa GitHub" href="https://github.com/smileysx" title="GitHub"></a>
-                            
-                                <a class="fa 简书" href="http://www.jianshu.com/users/26190d90bd48/timeline" title="简书"></a>
-                            
-                                <a class="fa CSDN" href="http://blog.csdn.net/a249900679" title="CSDN"></a>
-                            
-                        </ul>
-                    </nav>
-                </section>
-                
-                
-                <section class="switch-part switch-part2">
-                    <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/myelee主题/">myelee主题</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/sketch/">sketch</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/设计/">设计</a></li></ul>
-                    </div>
-                </section>
-                
-                
-                
-                <section class="switch-part switch-part3">
-                    <div id="js-friends">
-                    
-                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
-                    
-                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
-                    
-                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
-                    
-                    </div>
-                </section>
-                
-
-                
-                
-                <section class="switch-part switch-part4">
-                
-                    <div id="js-aboutme">专注于前端</div>
-                </section>
-                
-            </div>
-        </div>
-    </header>                
+<style type="text/css">
+p{
+	margin-left:10px;
+	margin-right:10px;}
+.body{
+	text-align:center;
+	}
+bgcolor{
+	background-color:#ffffeb;}
+.bgimg{
+	background-image:url(蓝色背景.png);
+	min-height: 100%
+	}
+.guodu1{
+	height:40px;}
+.daijinquan{
+	align:center;
+	color:#FFF;
+	font-family:"宋体";
+	font-size:25px;
+	font-weight:bold;}
+.guodu4{
+	height:40px;}
+.head{
+	border:1px solid #FFF;
+	margin: 0 auto;
+	width:500px;
+	height:120px;
+	text-align:left;
+	color:#FFF;
+	text-align:center;}
+.guodu2{
+	height:20px;}
+.button{
+	border-radius:10px;
+	width:150px;
+	height:40px;
+	color:#599BD8;
+	font-family:"宋体";
+	font-size:15px;
+	font-weight:bold}
+.guodu3{
+	height:30px;}
+.guodu5{
+	height:20px;}
+.pingtai1{
+	width:650px;
+	height:80px;
+	margin: 0 auto;}
+.pingtai{
+	width:600px;
+	height:120px;
+	margin: 0 auto;
+	text-align:left;}
+.pingtai3{
+	width:600px;
+	height:200px;
+	margin: 0 auto;
+	text-align:left;}
+.logoanderweima{
+	width:400px;
+	height:100px;
+	margin: 0 auto;}
+.logo{
+	float：left;
+	 width:150px;
+	 height:100px;
+		display:inline}
+.erweima{
+	float:left;
+	  width:200px;
+	 height:100px;
+	 border-right:1px solid #000;
+		display:inline}
+.guodu6{
+	  width:150px;
+	 height:200px;
+	 	border:1px solid #000;
+		display:inline}
+.img{
+	 width:130px;
+	 height:130px;}
+</style>
+<body class="body">
+<div class="bgcolor">
+<div class="bgimg">
+<div class="guodu1"></div>
+<div class="guodu4"><text class="daijinquan">◊ 好友分享的爱代代金券 ◊</text></div>
+<div class="head">
+<p id="text">爱代平台推出了代金券活动，复制这条信息￥领取+ACDGFR783A3￥后，赶快打开微信，进入公众号"爱代服务"(微信号:nuofan_aidai)，输入这条信息，即可领取代金券！<p>
 </div>
-    </div>
-    <div class="mid-col">
-      <nav id="mobile-nav">
-      <div class="overlay">
-          <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">Yusxon</a></h1>
-      </div>
-    <div class="intrude-less">
-        <header id="header" class="inner">
-            <a href="/" class="profilepic">
-                <img src="/img/avatar.png" class="animated zoomIn">
-            </a>
-            <hgroup>
-              <h1 class="header-author"><a href="/" title="回到主页">Yusxon</a></h1>
-            </hgroup>
-            
-            <p class="header-subtitle">认识，了解，探索，超越</p>
-            
-            <nav class="header-menu">
-                <ul>
-                
-                    <li><a href="/">主页</a></li>
-                
-                    <li><a href="/archives/">所有文章</a></li>
-                
-                    <li><a href="/tags/">标签云</a></li>
-                
-                    <li><a href="/about/">关于我&amp;留言板</a></li>
-                
-                <div class="clearfix"></div>
-                </ul>
-            </nav>
-            <nav class="header-nav">
-                        <ul class="social">
-                            
-                                <a class="fa Email" target="_blank" href="/elimsxx@gmail.com" title="Email"></a>
-                            
-                                <a class="fa GitHub" target="_blank" href="https://github.com/smileysx" title="GitHub"></a>
-                            
-                                <a class="fa 简书" target="_blank" href="http://www.jianshu.com/users/26190d90bd48/timeline" title="简书"></a>
-                            
-                                <a class="fa CSDN" target="_blank" href="http://blog.csdn.net/a249900679" title="CSDN"></a>
-                            
-                        </ul>
-            </nav>
-        </header>                
-    </div>
-    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
-</nav>
-      <div class="body-wrap"><article id="post-Hexo主题-myelee折腾记录" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/11/30/Hexo主题-myelee折腾记录/" class="article-date">
-      <time datetime="2016-11-30T01:23:47.000Z" itemprop="datePublished">2016-11-30</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      Hexo主题-myelee折腾记录
-    </h1>
-  
-
-      </header>
-      
-      <div class="article-info article-info-post">
-        
-
-        
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/myelee主题/">myelee主题</a></li></ul>
-    </div>
-
-        <div class="clearfix"></div>
-      </div>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h2 id="myelee主题来源"><a href="#myelee主题来源" class="headerlink" title="myelee主题来源"></a>myelee主题来源</h2><p>说明：myelee主题是基于<a href="https://github.com/MOxFIVE" target="_blank" rel="external">MOxFIVE</a>提供的<a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" rel="external">hexo-theme-yelee</a>主题修改的主题.<br>在此感谢<a href="https://github.com/MOxFIVE" target="_blank" rel="external">MOxFIVE</a>与<a href="http://www.netcan666.com/" target="_blank" rel="external">Netcan</a>提供的主题和主题修改思路!</p>
-<p>该主题我已上传到github,项目为<a href="https://github.com/smileysx/hexo-theme-myelee" target="_blank" rel="external">hexo-theme-myelee</a>.</p>
-<a id="more"></a>
-
-      
-    </div>
-    
-  </div>
-  
-    
-    <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/11/30/Hexo主题-myelee折腾记录/">Hexo主题-myelee折腾记录</a></p>
-        <p><span>文章作者:</span><a href="/" title="回到主页">Yusxon</a></p>
-        <p><span>发布时间:</span>2016-11-30, 09:23:47</p>
-        <p><span>最后更新:</span>2016-11-30, 18:50:37</p>
-        <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/11/30/Hexo主题-myelee折腾记录/" title="Hexo主题-myelee折腾记录">http://yusxon.cn/2016/11/30/Hexo主题-myelee折腾记录/</a>
-        </p>
-        <p>
-            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
-        </p>
-    </div>
-    <div style="width: auto;height: 1.2em;">
-        
-    </div>
-
-
-
-    <nav id="article-nav">
-        
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2017/01/01/sketch学习系列之sketch4的logo/">
-                    sketch学习系列之sketch4的logo
-                </a>
-            </div>
-        
-        
-            <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/11/30/Hexo-github博客搭建记录/">
-                    Hexo+github博客搭建记录
-                </a>
-            </div>
-        
-    </nav>
-
-  
-</article>
-
-    <div id="toc" class="toc-article">
-        <strong class="toc-title">文章目录</strong>
-        
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#myelee主题来源"><span class="toc-number">1.</span> <span class="toc-text">myelee主题来源</span></a></li></ol>
-        
-    </div>
-    <style>
-        .left-col .switch-btn,
-        .left-col .switch-area {
-            display: none;
-        }
-        .toc-level-4 i,
-        .toc-level-4 ol {
-            display: none !important;
-        }
-    </style>
-
-    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
-
-    <script>
-        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"true"];
-    </script>
-
-
-
-    
-<div class="share">
-    
-        <div class="bdsharebuttonbox">
-            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
-            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
-            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
-            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
-            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
-            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
-        </div>
-        <script>
-            window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"Hexo主题-myelee折腾记录　| Yusxon's Blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-        </script>
-    
-
-    
+<div class="guodu2"></div>
+<input class="button" type="button" onClick="copy()" value="点我快速复制" id="button"/>
+<div class="guodu3"></div>
 </div>
-
-
-
-
-
-
-
-    
-      <div class="duoshuo" id="comments">
-    <div id="comment-box" ></div>
-    <div class="ds-thread" id="ds-thread" data-thread-key="2016/11/30/Hexo主题-myelee折腾记录/" data-title="Hexo主题-myelee折腾记录" data-url="http://yusxon.cn/2016/11/30/Hexo主题-myelee折腾记录/"></div>
-    <script>
-        var duoshuoQuery = {short_name:"yusxon2"};
-        var loadComment = function(){
-            var d = document, s = d.createElement('script');
-            // s.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//sttic.duaoshuo.com/embed.js';
-            s.src = '/js/embed.js';
-            s.async = true; s.charset = 'UTF-8';
-            (d.head || d.body).appendChild(s);
-        }
-
-        
-    </script>
-    
-    <script> loadComment(); </script>
-
+<div class="guodu3"></div>
+---------------------------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;爱代平台&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---------------------------------
+<div class="guodu5"></div>
+<div class="pingtai1">爱代，大学生代办、代买、代拿平台，基于精准位置推送，无需手动查询订单</div>
+<div class="guodu3"></div>
+------------------------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;代金券领取方法&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-------------------------------
+<div class="guodu5"></div>
+<div class="pingtai"><p>1、复制上面白框中的文字</p>
+<p>2、打开“爱代服务公众号</p>
+<p>3、发送刚刚复制的文字到公众号即可领取”</p></div>
+<div class="guodu3"></div>
+---------------------------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;活动规则&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---------------------------------
+<div class="guodu5"></div>
+<div class="pingtai3"><p>1、***************</p>
+<p>2、*************************</p>
+<p>3、**************************</p>
+<p>4、****************************************</p>
+<p>5、**************************************</p></div>
+<div class="guodu1"></div>
+<div class="logoanderweima">
+<div class="logo"><img src="logo.png" /></div>
+<div class="erweima"><img src="logo.png"/></div>
 </div>
-    
-
-
-
-    <script>
-        
-    </script>
+<div class="guodu3"></div>
 </div>
-      <footer id="footer">
-    <div class="outer">
-        <div id="footer-info">
-            <div class="footer-left">
-                <i class="fa fa-copyright"></i> 
-                2016-2017 Yusxon
-            </div>
-            <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE & Yusxon <i class="fa fa-heart animated infinite pulse"></i>
-            </div>
-        </div>
-        
-            <div class="visit">
-                
-                    <span id="busuanzi_container_site_pv" style='display:none'>
-                    本站访问量:
-                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
-                        </span>
-                    </span>
-                
-                
-                    <span>| </span>
-                
-                
-                    <span id="busuanzi_container_page_pv" style='display:none'>
-                    本页访问量:
-                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
-                        </span>
-                    </span>
-                
-            </div>
-        
-    </div>
-</footer>
-    </div>
-    
-<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            // var iPad = window.navigator.userAgent.indexOf('iPad');
-            // if (iPad > -1 || $(".left-col").css("display") === "none") {
-            //     var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
-            //     var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
-            //     $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
-            // }
-            // else {
-            //     var backgroundnum = 10;
-            //     var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
-            //     $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
-            // }
-
-            var backgroundnum = 10;
-            var num = Math.ceil((Math.random() * 100)) % backgroundnum + 1;
-            var backgroundimg = "url(/background/sea/bg-x.jpg)".replace(/x/gi, num);
-            $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
-        })
-    </script>
-
-
-
-
-
-    <script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-        processEscapes: true,
-        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-    }
-});
-
-MathJax.Hub.Queue(function() {
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i=0; i < all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';                 
-    }       
-});
-</script>
-
-<script src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-</script>
-
-
-<div class="scroll" id="scroll">
-    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
-</div>
-<script>
-    // Open in New Window
-    
-        var oOpenInNew = {
-            
-            
-             post: ".article-entry a[href], .copyright a[href]", 
-            
-            
-            
-             archives: ".archive-article-title", 
-             miniArchives: "a.post-list-link", 
-            
-             friends: "#js-friends a", 
-             socail: ".social a" 
-        }
-        for (var x in oOpenInNew) {
-            $(oOpenInNew[x]).attr("target", "_blank");
-        }
-    
-</script>
-
-<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
-  </div>
 </body>
 </html>
+<script type="text/javascript"> 
+function copy() 
+{ 
+var Url2=document.getElementById("text"); 
+/* 创建range对象   */
+const range = document.createRange();
+range.selectNode(Url2);    // 设定range包含的节点对象 
+
+/* 窗口的selection对象，表示用户选择的文本 */
+const selection = window.getSelection();
+if(selection.rangeCount > 0) selection.removeAllRanges(); // 将已经包含的已选择的对象清除掉
+selection.addRange(range);                                // 将要复制的区域的range对象添加到selection对象中
+
+document.execCommand('copy'); // 执行copy命令，copy用户选择的文本
+button.value="已复制好"
+} 
+</script> 
