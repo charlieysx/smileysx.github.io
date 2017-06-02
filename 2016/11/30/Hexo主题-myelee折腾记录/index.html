@@ -1,145 +1,187 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>代金券分享</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>代金券分享</title>
+    <!--<link href="css/share_coupon.css" rel="stylesheet"/>-->
 </head>
 <style type="text/css">
-p{
-	margin-left:10px;
-	margin-right:10px;}
-.body{
-	text-align:center;
-	}
-bgcolor{
-	background-color:#ffffeb;}
-.bgimg{
-	background-image:url(蓝色背景.png);
-	min-height: 100%
-	}
-.guodu1{
-	height:40px;}
-.daijinquan{
-	align:center;
-	color:#FFF;
-	font-family:"宋体";
-	font-size:25px;
-	font-weight:bold;}
-.guodu4{
-	height:40px;}
-.head{
-	border:1px solid #FFF;
-	margin: 0 auto;
-	width:500px;
-	height:120px;
-	text-align:left;
-	color:#FFF;
-	text-align:center;}
-.guodu2{
-	height:20px;}
-.button{
-	border-radius:10px;
-	width:150px;
-	height:40px;
-	color:#599BD8;
-	font-family:"宋体";
-	font-size:15px;
-	font-weight:bold}
-.guodu3{
-	height:30px;}
-.guodu5{
-	height:20px;}
-.pingtai1{
-	width:650px;
-	height:80px;
-	margin: 0 auto;}
-.pingtai{
-	width:600px;
-	height:120px;
-	margin: 0 auto;
-	text-align:left;}
-.pingtai3{
-	width:600px;
-	height:200px;
-	margin: 0 auto;
-	text-align:left;}
-.logoanderweima{
-	width:400px;
-	height:100px;
-	margin: 0 auto;}
-.logo{
-	float：left;
-	 width:150px;
-	 height:100px;
-		display:inline}
-.erweima{
-	float:left;
-	  width:200px;
-	 height:100px;
-	 border-right:1px solid #000;
-		display:inline}
-.guodu6{
-	  width:150px;
-	 height:200px;
-	 	border:1px solid #000;
-		display:inline}
-.img{
-	 width:130px;
-	 height:130px;}
+	html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+	background-color: #ffffeb;
+	word-break: break-all;
+}
+
+.top {
+	background-image: url('http://yusxon.cn/background/sea/bg-1.png');
+	padding: 10px;
+    background-size: cover;
+    text-align: center;
+}
+
+.top .title {
+	text-align: center;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 16px;
+	margin-top: 15px;
+}
+
+.top .share-content {
+	color: #FFFFFF;
+	font-size: 14px;
+	border: 1px dashed #FFFFFF;
+	padding: 10px;
+	margin: 15px;
+	text-align: start;
+}
+
+.top .copy-button {
+	color: #599BD8;
+	border-radius:100px;
+	background-color: #FFFFFF;
+	text-align: center;
+	font-size: 14px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: inline-block;
+  	*display: inline;
+  	*zoom: 1;
+  	margin-bottom: 10px;
+}
+
+.copy-button:active {
+	font-size: 10px;
+}
+
+.middle {
+	padding: 10px;
+}
+
+.middle .content-block {
+	margin-top: 10px;
+}
+
+.content-block .title {
+	text-align: center;
+}
+
+.content-block .title .title-line-left {
+	width: 30%;
+	border: 1px solid #000000;
+	float: left;
+	margin-top: 10px;
+}
+
+.content-block .title .title-line-right {
+	width: 30%;
+	border: 1px solid #000000;
+	float: right;
+	margin-top: 10px;
+}
+
+.content-block .title .title-text {
+	font-size: 12px;
+	color: #000000;
+	display: inline-block;
+  	*display: inline;
+  	*zoom: 1;
+  	padding-left: 10px;
+  	padding-right: 10px;
+}
+
+.content-block .content {
+	font-size: 12px;
+	padding: 5px;
+}
+
+.bottom {
+	padding: 10px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.bottom .image-left {
+	float: left;
+	width: 30%;
+	margin-left: 10%;
+}
+
+.bottom .image-right {
+	width: 30%;
+	margin-right: 10%;
+	float: right;
+}
+
+.bottom .line-middle {
+	border: 1px solid #000000;
+	height: 80px;
+	display: inline-block;
+  	*display: inline;
+  	*zoom: 1;
+}
+
 </style>
-<body class="body">
-<div class="bgcolor">
-<div class="bgimg">
-<div class="guodu1"></div>
-<div class="guodu4"><text class="daijinquan">◊ 好友分享的爱代代金券 ◊</text></div>
-<div class="head">
-<p id="text">爱代平台推出了代金券活动，复制这条信息￥领取+ACDGFR783A3￥后，赶快打开微信，进入公众号"爱代服务"(微信号:nuofan_aidai)，输入这条信息，即可领取代金券！<p>
-</div>
-<div class="guodu2"></div>
-<input class="button" type="button" onClick="copy()" value="点我快速复制" id="button"/>
-<div class="guodu3"></div>
-</div>
-<div class="guodu3"></div>
----------------------------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;爱代平台&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---------------------------------
-<div class="guodu5"></div>
-<div class="pingtai1">爱代，大学生代办、代买、代拿平台，基于精准位置推送，无需手动查询订单</div>
-<div class="guodu3"></div>
-------------------------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;代金券领取方法&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-------------------------------
-<div class="guodu5"></div>
-<div class="pingtai"><p>1、复制上面白框中的文字</p>
-<p>2、打开“爱代服务公众号</p>
-<p>3、发送刚刚复制的文字到公众号即可领取”</p></div>
-<div class="guodu3"></div>
----------------------------------&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;活动规则&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---------------------------------
-<div class="guodu5"></div>
-<div class="pingtai3"><p>1、***************</p>
-<p>2、*************************</p>
-<p>3、**************************</p>
-<p>4、****************************************</p>
-<p>5、**************************************</p></div>
-<div class="guodu1"></div>
-<div class="logoanderweima">
-<div class="logo"><img src="logo.png" /></div>
-<div class="erweima"><img src="logo.png"/></div>
-</div>
-<div class="guodu3"></div>
-</div>
+<body class="body-bg">
+	<div class="top">
+		<div class="title">◊ 好友分享的爱代代金券 ◊</div>
+		<div class="share-content">
+				爱代平台推出了代金券活动，复制这条信息￥领取+ACDGFR783A3￥后，赶快打开微信，进入公众号"爱代服务"(微信号:nuofan_aidai)，输入这条信息，即可领取代金券！
+		</div>
+		<div class="copy-button">点我复制</div>
+	</div>
+	<div class="middle">
+		<div class="content-block">
+			<div class="title">
+				<div class="title-line-left"></div>
+				<div class="title-text">爱代平台</div>
+				<div class="title-line-right"></div>
+			</div>
+			<div class="content">爱代，大学生代办、代买、代拿平台，基于精准位置推送，无需手动查询订单</div>
+		</div>
+		<div class="content-block">
+			<div class="title">
+				<div class="title-line-left"></div>
+				<div class="title-text">代金券领取方法</div>
+				<div class="title-line-right"></div>
+			</div>
+			<div class="content">
+				1.复制上面虚线框中的文字</br>
+				2.打开“爱代服务公众号</br>
+				3.发送刚刚复制的文字到公众号即可领取
+			</div>
+		</div>
+		<div class="content-block">
+			<div class="title">
+				<div class="title-line-left"></div>
+				<div class="title-text">活动规则</div>
+				<div class="title-line-right"></div>
+			</div>
+			<div class="content">
+				1.**************</br>
+				2.********************************************</br>
+				3.*****************************</br>
+				4.***************************************************************************</br>
+				5.*****************************************************</br>
+			</div>
+		</div>
+	</div>
+	<div class="bottom">
+		<div class="image-left">
+			<img src="image/bottom_logo.png" width="100%"/>
+		</div>
+		<div class="line-middle"></div>
+		<div class="image-right">
+			<img src="image/qrcode.png" width="100%"/>
+		</div>
+	</div>
 </body>
 </html>
-<script type="text/javascript"> 
-function copy() 
-{ 
-var Url2=document.getElementById("text"); 
-/* 创建range对象   */
-const range = document.createRange();
-range.selectNode(Url2);    // 设定range包含的节点对象 
-
-/* 窗口的selection对象，表示用户选择的文本 */
-const selection = window.getSelection();
-if(selection.rangeCount > 0) selection.removeAllRanges(); // 将已经包含的已选择的对象清除掉
-selection.addRange(range);                                // 将要复制的区域的range对象添加到selection对象中
-
-document.execCommand('copy'); // 执行copy命令，copy用户选择的文本
-button.value="已复制好"
-} 
-</script> 
