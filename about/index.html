@@ -285,29 +285,7 @@
       关于我&amp;留言板
     </h1>
           
-          
-	
-		<div id="selectable" onClick="selectText()">
-			fasdfasdfasdfasdf
-		</div>
-          <script> 
-		function selectText() {
-    if (document.selection) {
-        var range = document.body.createTextRange();
-        range.moveToElementText(document.getElementById('selectable'));
-        range.select();
-    } else if (window.getSelection) {
-        var range = document.createRange();
-        range.selectNode(document.getElementById('selectable'));
-        window.getSelection().removeAllRanges();
-        window.getSelection().addRange(range);
-    } else {
-		alert("11");
-    }
-}
-	</script>
-  
-
+      
       </header>
       
       <div class="article-info article-info-post">
